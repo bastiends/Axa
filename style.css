@@ -1,0 +1,76 @@
+.container-fluid {
+    height: 100vh;
+}
+.row {
+    height: 100%;
+}
+
+.background-image {
+    background-image: url('img/pomme.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.left-part {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    background-color: white;
+}
+
+.form-element {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.capitalized-title {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.capitalized-text {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.back-link {
+    letter-spacing: 1px;
+    font-weight: 600;color: #06036a;
+}
+
+.next-button {
+    border: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+    background-color: #f07661;
+    padding: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .left-part .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .vertical-center {
+        padding: 25px 10px;
+        background-color: white;
+        transform: translateY(-10%);
+    }
+    
+}
